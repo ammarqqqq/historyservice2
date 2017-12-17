@@ -3,14 +3,14 @@ module.exports = function(){
         case 'test':
             return {
               'secret': '04050405',
-              'database': 'mongodb://localhost:27017/historytable',
+              'database': 'mongodb://localhost:27014/historytable',
               'logsDirectory': 'logs',
               'serviceName': 'historyservice'
             };
         default:
             return {
               'secret': '04050405',
-              'database': 'mongodb://historymongo:27017/historytable',
+              'database': 'mongodb://microservices_historymongo:27014/historytable',
               'logsDirectory': 'logs',
               'serviceName': 'historyservice'
             };
