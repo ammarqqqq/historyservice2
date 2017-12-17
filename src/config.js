@@ -5,14 +5,14 @@ module.exports = function(){
               'secret': '04050405',
               'database': 'mongodb://localhost:27014/historytable',
               'logsDirectory': 'logs',
-              'serviceName': 'historyservice'
+              'serviceName': 'microservices_historyservice'
             };
         default:
             return {
               'secret': '04050405',
               'database': 'mongodb://microservices_historymongo:27014/historytable',
               'logsDirectory': 'logs',
-              'serviceName': 'historyservice'
+              'serviceName': 'microservices_historyservice'
             };
     }
 };
