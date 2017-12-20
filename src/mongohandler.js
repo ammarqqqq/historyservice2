@@ -12,7 +12,7 @@ module.exports.listen = function(url){
     var url = "mongodb://" +  server  +  ":27014/historytable";
     try {
       mongoose.connect(url, { useMongoClient: true });
-      mongoose.connect(url);
+      //mongoose.connect(url);
       console.log("Connected to " + url)
     } catch(error) {
       console.log("Could not connect to " + url + ". " + error);
